@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Лес Возможностей</title>
+
+	<link rel="stylesheet" href="css/main.css">
+
+	<script src="libs/gsap/gsap.min.js" defer></script>
+	<script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+	<script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+	<script src="js/companyproc.js" defer></script>
+	<script src="js/app.js" defer></script>
+
+</head>
+<body>
+
+	<div class="wrapper">
+		<div class="content">
+
+			<header class="main-header" style="background: #161a1e;">
+					<nav>
+					<a href="main.html">Информация</a>
+					<a href="price.html">Информационные технологии</a>
+					<a href="people.html">Специальность</a>
+					<a href="company.html">Абитуриенты</a>
+					<a href="question.html">Вопрос-ответ</a>
+					<a href="contact.html">Подоконник</a>
+					<div class="clearfix"></div>
+					</nav>
+				<div class="layers">
+					<div class="layer__header">
+						<div class="layers__caption">Добро пожаловать</div>
+						<div class="layers__title">В IT мир</div>
+					</div>
+					<div class="layer layers__base" style="background-image: url(img/layer-base.png);"></div>
+					<div class="layer layers__middle" style="background-image: url(img/layer-middle.png);"></div>
+					<div class="layer layers__front" style="background-image: url(img/layer-front.png);"></div>
+				</div>
+			</header>
+		
+			<article class="main-article" style="background-image: url(img/dungeon.jpg);">
+				<div class="main-article__content"><br/><br/><br/>
+					<h2 class="main-article__header">Абитуриентам предлагается</h2>
+						<p class="main-article__paragraph"><strong>Добрый день дорогие абитуриентам, вы можете подать заявку на поступление в колледж онлайн.<br/>
+							От вес требуется всего посмотреть в районе стола преподавателя, заполнить фио, E-mail адрес и описание себя. </strong></p>
+							<div>
+								<form id="form1" action="/" method="POST" roll="form" onsubmit=" return submitForm();">
+								<label class="main-article__paragraph" for="name">Введите ФИО</label><br/>
+								<input id="name" name="name" size="99" type="text" placeholder="Иванов Иван Иванович"
+								title="Фамилия Имя Отчество" required
+								pattern="([a-la-Raza}{3,30})+\s+([a-a-Ra-zA-Z}{3,30})+\s+([a-a-Ra-zA-Z}{3,30})"/><br/>
+								<label class="main-article__paragraph" for="email">Email адрес</label><br/>
+								<input id="email" name="email" size="30" type="text" placeholder=" mail@mail.ru " required/><br/>
+								<label class="main-article__paragraph" for="message">Описание: </label><br/>
+								<textarea id="message" cols="60" rows="10" name="message" required></textarea><br/>
+								<button type="submit"><strong>Дверь</strong>></button>
+								</form>
+								</div>		
+					</div>
+				<div class="copy">© ВВГУ 2023 г.<br/></div>
+			</article>
+
+		</div>
+	</div>
+
+</body>
+</html>
